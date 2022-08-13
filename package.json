@@ -1,0 +1,24 @@
+{
+  "name": "td",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "detectlanguage": "^2.1.0",
+    "dotenv": "^16.0.1",
+    "firebase-admin": "^11.0.1",
+    "node-fetch": "^3.2.4",
+    "piston-client": "^1.0.2",
+    "skia-canvas": "^0.9.30",
+    "skia-canvas-twemoji": "^0.2.0",
+    "twit": "^2.2.11"
+  }
+}
