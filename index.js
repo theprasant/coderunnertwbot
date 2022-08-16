@@ -7,13 +7,15 @@ http.createServer(function (req, res) {
 }).listen(process.env.PORT || 8080); //the server object listens on port 8080
 
 import { getMentions, getOnlyRepliedMentions, getTweet, replyMentionedTweets } from './lib/twitter.js';
+import config from './config.js';
 
 const pistonClient = piston({ server: "https://emkc.org" });
 
 global.runtimes = await pistonClient.runtimes();
 
-let username = 'testerOfPKS';
-let userid = '1530255193090441216';
+let username = config.username;
+let userid = config.userid_str;
+
 let lastMentionDetectionTime = new Date().toISOString();
 
 let mentionDetectionInterval = setInterval(async () => {
