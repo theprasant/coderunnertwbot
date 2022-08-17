@@ -2,9 +2,9 @@ import http from 'http';
 import piston from "piston-client";
 
 http.createServer(function (req, res) {
-  res.write('Hello World!'); //write a response to the client
+  res.write('Hello World!'); 
   res.end();
-}).listen(process.env.PORT || 8080); //the server object listens on port 8080
+}).listen(process.env.PORT || 8080); 
 
 import { getMentions, getOnlyRepliedMentions, getTweet, replyMentionedTweets } from './lib/twitter.js';
 import config from './config.js';
