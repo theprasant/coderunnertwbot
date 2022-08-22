@@ -19,6 +19,7 @@
     "piston-client": "^1.0.2",
     "skia-canvas": "^0.9.30",
     "skia-canvas-twemoji": "^0.2.0",
-    "twit": "^2.2.11"
+    "twit": "^2.2.11",
+    "twitter-text": "^3.1.0"
   }
 }
