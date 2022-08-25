@@ -21,6 +21,7 @@ let lastMentionDetectionTime = new Date().toISOString();
 let mentionDetectionInterval = setInterval(async () => {
   try {
     let allMentions = await getMentions(userid, lastMentionDetectionTime);
+    // console.log(`${allMentions?.data?.length} mentions found.`);
     if (allMentions && allMentions.data && allMentions.data.length) {
       let lastMentionTimeInMilisec = new Date(allMentions.data[0].created_at).getTime() + 1000;
       lastMentionDetectionTime = new Date(lastMentionTimeInMilisec).toISOString();
